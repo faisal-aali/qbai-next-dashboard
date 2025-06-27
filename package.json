@@ -3,10 +3,10 @@
   "version": "1.6.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node api.js && next dev",
     "build": "NODE_OPTIONS=\"--max-old-space-size=4096\" next build",
-    "start": "next start",
-    "start:dev": "next start -p 4000",
+    "start": "node api.js && next start",
+    "start:dev": "node api.js && next start -p 4000",
     "lint": "next lint"
   },
   "dependencies": {
