@@ -1,0 +1,17 @@
+.backgroundImage {
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+}
+
+.backgroundImageCardNum {
+    background-image: url('/assets/card-number-icon.svg');
+}
+
+.backgroundImageCvv {
+    background-image: url('/assets/cvv-icon.svg');
+}
+
+.backgroundImageExpiry {
+    background-image: url('/assets/expiry-date-icon.svg');
+}

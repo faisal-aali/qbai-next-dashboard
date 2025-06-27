@@ -1,0 +1,28 @@
+{
+  "name": "db-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "migrate:tickets-messages": "ts-node src/scripts/migrateTicketsMessages.ts",
+    "migrate:drills-recommendation": "ts-node src/scripts/migrateDrillsRecommendation.ts",
+    "download:3motion-legacy-data": "ts-node src/scripts/download3MotionLegacyData.ts",
+    "populate:3motion-legacy-data-in-s3": "ts-node src/scripts/populate3MotionLegacyDataInS3.ts",
+    "add:transcriptionVideo": "ts-node src/scripts/addTranscriptionsToDrills.ts"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/p-limit": "^2.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "p-limit": "^3.1.0"
+  }
+}

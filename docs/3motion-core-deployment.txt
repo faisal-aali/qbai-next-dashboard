@@ -1,0 +1,18 @@
+Below are the pre-deployment steps for 3motion Core API
+
+1. Update envs to add/remove the values: 
+
++ MOTION_API_BASE_URL
++ MOTION_API_KEY
++ ENVIRONMENT
++ AWS_BUCKET_3MOTION
+- _3MOTION_EMAIL
+- _3MOTION_PASSWORD
+
+2. Add motionApiVersion attribute as 'legacy' for the current documents in videos mongo collection
+
+3. Execute steps in the mongo compass listed in script file 3MotionLegacyDataUpdate
+
+4. Run the script populate3MotionLegacyDataInS3 in target DB
+
+5. Update 3motion webhook url
